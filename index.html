@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- Nav Bar starts -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #ff597b"
+      id="topnav"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="Images/logo.png" width="60px" class="img-fluid"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              id="searchbox"
+            />
+            <button class="btn btn-outline-dark" type="submit" id="searchbtn">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav Bar ends -->
+
+    <!-- Container starts here -->
+    <div class="container-fluid">
+      <!-- Banner starts here -->
+      <div
+        class="row justify-content-evenly"
+        style="background-color: #fe4f72"
+        id="banner"
+      >
+        <div class="col-md-6" id="bannerleft">
+          <h1>
+            "Compassionate care for your beloved pets, from our heart to yours."
+          </h1>
+          <p>
+            We provide exceptional veterinary care with a compassionate touch,
+            valuing the special bond between pets and their families, and
+            treating every patient as our own.
+          </p>
+          <button type="submit" class="btnn" id="btn1">Contact Us</button>
+          <button type="submit" class="btnn" id="btn2">Our Services</button>
+        </div>
+        <div class="col-md-4" id="bannerRight">
+          <img src="Images/br.png" class="img-fluid" />
+        </div>
+      </div>
+      <!-- Banner ends here -->
+
+      <!-- Service section after banner -->
+      <div class="row justify-content-evenly" style="background-color: #f8c4ce">
+        <div class="col-md-5" id="service-text">
+          <h1>Caring for your pet's health, one visit at a time.</h1>
+          <p>
+            Our comprehensive services prioritize your pet's health and
+            wellbeing, delivered with expertise and personalized attention to
+            their unique needs.
+          </p>
+          <button type="submit" class="btnn" id="service-btn">
+            Our Services
+          </button>
+        </div>
+        <div class="col-5" id="service-img">
+          <img src="Images/cat.jpg" class="img-fluid" />
+        </div>
+      </div>
+
+      <!-- Types of services -->
+      <div
+        class="row justify-content-evenly"
+        id="typeservice"
+        style="background-color: #f9b5d0"
+      >
+        <div class="col-md-12 text-center" id="toptext">
+          <h2>Our Services</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+            magnam atque non, <br />minus quidem quo!
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img src="Images/doc1.jpg" class="img-fluid ser-img" />
+          <h3 class="text-center">Veterinarian</h3>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+            beatae!
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img src="Images/doc2.jpg" class="img-fluid ser-img" />
+          <h3 class="text-center">Veterinarian</h3>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+            beatae!
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img src="Images/doc3.jpg" class="img-fluid ser-img" />
+          <h3 class="text-center">Veterinarian</h3>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+            beatae!
+          </p>
+        </div>
+      </div>
+      <!-- stats section starts here -->
+      <div class="row justify-content-evenly text-center" id="stats-sec">
+        <div class="col-md-3 text-white mt-5 mb-3 pt-5 pb-3">
+          <i class="bi bi-heart-pulse stats-icon"></i>
+          <h3>
+            +32234<br />
+            Happy Clients
+          </h3>
+        </div>
+        <div class="col-md-3 text-white mt-5 mb-3 pt-5 pb-3">
+          <i class="bi bi-lungs stats-icon"></i>
+          <h3>
+            +321<br />
+            Departments
+          </h3>
+        </div>
+        <div class="col-md-3 text-white mt-5 mb-3 pt-5 pb-3">
+          <i class="bi bi-clipboard2-pulse stats-icon"></i>
+          <h3>
+            +121212<br />
+            Vaccinations
+          </h3>
+        </div>
+      </div>
+      <!-- Purchase pets starts -->
+      <div
+        class="row justify-content-evenly text-center"
+        id="store-sec"
+        style="background-color: #ff8fbc"
+      >
+        <div class="col-md-12 text-center" id="storetext">
+          <h2>Our Store</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+            magnam atque non, <br />minus quidem quo!
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img src="Images/d1.jpg" class="img-fluid ser-img" />
+          <h3><del>$45</del>&nbsp;&nbsp; $35</h3>
+          <button type="submit" id="store-btn1">Buy Now</button>
+        </div>
+        <div class="col-md-3">
+          <img src="Images/d2.jpg" class="img-fluid ser-img" />
+          <h3><del>$35</del>&nbsp;&nbsp; $20</h3>
+          <button type="submit" id="store-btn2">Buy Now</button>
+        </div>
+        <div class="col-md-3">
+          <img src="Images/d3.jpg" class="img-fluid ser-img" />
+          <h3><del>$30</del>&nbsp;&nbsp; $25</h3>
+          <button type="submit" id="store-btn3">Buy Now</button>
+        </div>
+      </div>
+
+      
+      <!-- OUR TEAM Section -->
+      <div class="row justify-content-evenly text-center" id="team-sec">
+        <div class="col-md-12 text-center" id="teamtext">
+          <h2>Our Team</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur. Impedit magnam atque non,
+            <br />minus quidem quo!
+          </p>
+        </div>
+        <div class="col-md-3 teamdiv">
+          <img src="Images/t1.jpg" class="img-fluid ser-img" />
+          <h3>Jennifer Muller</h3>
+          <p>DOCTOR</p>
+          <p>
+            <i class="bi bi-instagram"></i> <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-meta"></i> <i class="bi bi-linkedin"></i>
+            <i class="bi bi-facebook"></i>
+          </p>
+        </div>
+        <div class="col-md-3 teamdiv">
+          <img src="Images/t2.jpg" class="img-fluid ser-img" />
+          <h3>Jack Jonas</h3>
+          <p>ADMINSTRATION</p>
+          <p>
+            <i class="bi bi-instagram"></i> <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-meta"></i> <i class="bi bi-linkedin"></i>
+            <i class="bi bi-facebook"></i>
+          </p>
+        </div>
+        <div class="col-md-3 teamdiv">
+          <img src="Images/t3.jpg" class="img-fluid ser-img" />
+          <h3>Natasha Jefferson</h3>
+          <p>ADMINSTRATION</p>
+          <p>
+            <i class="bi bi-instagram"></i> <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-meta"></i> <i class="bi bi-linkedin"></i>
+            <i class="bi bi-facebook"></i>
+          </p>
+        </div>
+      </div>
+      <!-- Our Team section ends here -->
+
+      <!-- Cards blog section starts here -->
+      <div class="row justify-content-evenly text-center" id="cards-sec">
+        <div class="col-md-12 text-center" id="cardstext">
+          <h2>Recent Posts</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur. Impedit magnam atque non,
+            <br />minus quidem quo!
+          </p>
+        </div>
+        <div class="col-md-3 cards-pad">
+          <div class="card text-start" style="width: 18rem">
+            <img src="Images/c1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">As a Veterinarian and lover of animals</h5>
+              <h6>APRIL 25, 2023</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 cards-pad">
+          <div class="card text-start" style="width: 18rem">
+            <img src="Images/c2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">As a Veterinarian and lover of animals</h5>
+              <h6>APRIL 25, 2023</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 cards-pad">
+          <div class="card text-start" style="width: 18rem">
+            <img src="Images/c3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">As a Veterinarian and lover of animals</h5>
+              <h6>APRIL 25, 2023</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Us and Address section -->
+      <div
+        class="row justify-content-evenly pt-5 pb-5"
+        style="background-color: #ffacdb"
+      >
+        <!-- Contact Us section -->
+        <div class="col-md-5 mt-5" id="third">
+          <h3 class="mb-4">Contact Us</h3>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" />
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Message</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-danger">Submit</button>
+          </form>
+        </div>
+
+        <!-- Address section -->
+        <div class="col-md-5 mt-5">
+          <h3 class="mb-4">Address</h3>
+          <p>
+            <i class="bi bi-house-door-fill"></i> Srinagar, Jammu & Kashmir
+            <br />
+            &nbsp &nbsp 190005, High Street <br />
+            <i class="bi bi-telephone-fill"></i> +91 1234567890
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2024.382129066119!2d74.7925156998442!3d34.00102268488705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18e0c33d911b1%3A0xc4d1e077d74feee6!2sRangreth%2C%20Srinagar!5e0!3m2!1sen!2sin!4v1681903820620!5m2!1sen!2sin"
+            height="250"
+            style="border: 0; width: 100%"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Footer section -->
+      <div class="row justify-content-evenly pt-5 pb-2 text-white" style="background-color: #ef2d54;">
+        <div class="col-md-3 pt-4">
+          <h5 class="pb-2">Vet Care</h5>
+          <p>
+            Stay updated with our comprehensive coverage of sports news, scores,
+            highlights, and live streaming options, all in one place.
+          </p>
+        </div>
+        <div class="col-md-3 pt-4">
+          <h5 class="pb-2">Important links</h5>
+          <p>
+            <a href="#" class="link-light text-decoration-none">Home</a><br />
+            <a href="#" class="link-light text-decoration-none">About us</a
+            ><br />
+            <a href="#" class="link-light text-decoration-none">Services</a
+            ><br />
+            <a href="#" class="link-light text-decoration-none">Blogs</a><br />
+            <a href="#" class="link-light text-decoration-none">Contact us</a
+            ><br />
+          </p>
+        </div>
+        <div class="col-md-3 pt-4">
+          <h5 class="pb-2">Contact us</h5>
+          <p>
+            <i class="bi bi-house-door-fill"></i> Srinagar, Jammu & Kashmir
+            <br />
+            &nbsp &nbsp 190005, High Street <br />
+            <i class="bi bi-telephone-fill"></i> +91 1234567890
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Container Ends here -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
